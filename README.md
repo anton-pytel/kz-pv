@@ -36,6 +36,8 @@ Na to, aby bolo možné používať zásuvky, ktoré sú vyvedené von z rozvodn
 
 Ak áno, je možné, zásuvky používať. V prípade problému otvorte [stránku na nahlasovanie problémov](https://github.com/anton-pytel/kz-pv/issues) stlačte tlačitko `New Issue`, napíšte detaily problému do pripraveného okna a popis problému uložte.
 
+**POZOR:** Nedotýkajte sa šróbov, ktoré sa nachádzajú na prúdovom chrániči a ističi, lebo hrozí riziko úrazu elektrickým zariadením.
+
 
 ### Vypnutie
 Je potrebné aspoň jeden z 3 komponentov v bodoch uvedených vyššie (vypínač striedača, chránič, istič) vypnúť a zatvoriť rozvodnú skriňu.
@@ -48,6 +50,7 @@ Na Displeji striedača sa priebežne menia zobrazené hodnoty. Jediná hodnota v
 
 ## PS
 Najbližšie plány:
+- zabezpečenie (zakrytie) živích častí = šróbov na elektrických spojoch v rámci rozvodnej skrine.
 - spojazdnenie vzdialeného odpočtu výroby a spotreby len pre informatívne účely
 - natiahnutie svetla do železnej búdy
 - ďalšie rôzne nepomenované nápady... neváhajte zadávať prostredníctvom [rovnakého formuláru](https://github.com/anton-pytel/kz-pv/issues) ako v prípade problému.
