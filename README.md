@@ -20,7 +20,7 @@ Na druhom obrázku je zobrazený rozvádzač a jeho súčasti:
 - AC: elektrické zásuvky ako ich poznáme na výstupe zo striedača.
 - Zariadenie, do ktorého sa zbiehajú PV, B a DC káble sa nazýva regulátor nabíjania ([nabíjač](https://ecoprodukt.sk/p/18274)). Slúži na optimálny odber výkonu z PV panelov a presunu do batérii a do zariadení pripojených na striedač.  
 
-**POZOR:** Napätie zo striedača na zásuvkách sa pohybuje na úrovni 200V. V bežne dodávanej elektrickej energie je napätie na úrovni 220-240V. Preto používanie zariadení citlivých na úroveň napätia je na vlastné riziko. Za spôsobené škody na zariadeniach nemôžeme brať zodpovednosť.
+**POZOR:** Napätie zo striedača na zásuvkách sa pohybuje na úrovni 200V. V bežne dodávanej elektrickej energie je napätie na úrovni 220-240V. Preto používanie zariadení citlivých na úroveň napätia je na vlastné riziko. Za spôsobené škody na zariadeniach nemôžeme brať zodpovednosť. Rovnako výkon, ktorý je možné odoberať je obmedzený na 1500W.
 
 
 ## Návod na obsluhu
