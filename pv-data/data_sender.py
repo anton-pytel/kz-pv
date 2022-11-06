@@ -19,6 +19,7 @@ def init_mqtt() -> mqtt:
     def on_disconnect(client, userdata, rc):
         if rc != 0:
             print("Unexpected disconnection.", rc)
+            print("See err codes here https://github.com/eclipse/paho.mqtt.python/blob/master/src/paho/mqtt/client.py#L157")
     def on_log(client, userdata, level, buf):
         print("log: ",buf) 
     mc = mqtt.Client()
