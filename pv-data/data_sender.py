@@ -7,11 +7,11 @@ import persistqueue
 from epevermodbus.driver import EpeverChargeController
 from decouple import config
 
-mqtt_host = config("MQTT_HOST", default="sense.camp")
-mqtt_port = config("MQTT_PORT", default=8883)
-mqtt_token = ""
-queue_name = "solar-data-1"
-epever_addr = "/dev/ttyACM0"
+MQTT_HOST = config("MQTT_HOST", default="sense.camp")
+MQTT_PORT = config("MQTT_PORT", default=8883)
+MQTT_TOKEN = config("MQTT_TOKEN", default="")
+QUEUE_NAME = "solar-data-1"
+EPEVER_ADDR = config("EPEVER_ADDR", default="/dev/ttyACM0")
 
 
 def init_mqtt() -> mqtt:
@@ -29,8 +29,8 @@ def init_mqtt() -> mqtt:
     mc.on_connect = on_connect
     mc.on_disconnect = on_disconnect
     mc.on_log = on_log
-    mc.username_pw_set(mqtt_token, None)
-    mc.connect_async(mqtt_host, mqtt_port, 60)
+    mc.username_pw_set(MQTT_TOKEN, None)
+    mc.connect_async(MQTT_HOST, MQTT_PORT, 60)
     mc.loop_start()
     return mc
 
@@ -57,7 +57,7 @@ def read_solar_data(ecc: EpeverChargeController) -> dict:
 
 
 def init_queue() -> persistqueue:
-    return  persistqueue.SQLiteQueue(queue_name, auto_commit=True)
+    return  persistqueue.SQLiteQueue(QUEUE_NAME, auto_commit=True)
 
 
 def kill_mqtt(mc: mqtt) -> None:
@@ -65,7 +65,7 @@ def kill_mqtt(mc: mqtt) -> None:
 
 
 def init_epver() -> EpeverChargeController:
-    return EpeverChargeController(epever_addr, 1)
+    return EpeverChargeController(EPEVER_ADDR, 1)
 
 
 def current_milli_time():
