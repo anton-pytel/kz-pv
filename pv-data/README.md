@@ -14,7 +14,7 @@ Accessible [here](https://sense.camp/dashboard/dab20c20-6146-11ed-968b-252832edc
 ### SW part
 1. Install Python3 and [pipenv](https://pypi.org/project/pipenv/) into the raspberry or linux. 
 2. git clone this repository into eg home See the kzpv.service file
-3. Create virtual environment and sync dependencies (epever-modbus, paho-mqtt, ...)
+3. Create virtual environment and sync dependencies (epever-modbus, paho-mqtt, persist-queue)
 ```
 cd ~
 git clone git@github.com:anton-pytel/kz-pv.git
