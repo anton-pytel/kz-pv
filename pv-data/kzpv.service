@@ -1,0 +1,9 @@
+[Unit]
+Description=Reading data from solar controller and send to mqtt
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/pi/.local/share/virtualenvs/pv-data-9GnCryJT/bin/python /home/pi/kz-pv/pv-data/data_sender.py
+[Install]
+WantedBy=multi-user.target

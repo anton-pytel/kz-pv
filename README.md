@@ -46,11 +46,13 @@ Je potrebné aspoň jeden z 3 komponentov v bodoch uvedených vyššie (vypína�
 ## Záver
 Na  stránke dodavateľa [produktu](https://ecoprodukt.sk/p/80126-solarny-ostrovny-system-1-11kwp-24v-s-40a-mppt-200ah-20179) je uvedená predpokladaná výroba elektrickej energie. Ročná výroba elektrickej energie daného systému pri optimálnych podmienkach by vedela pokryť takmer jeden celý byt. Poďme ju teda spolu pouužívať. 
 Na Displeji striedača sa priebežne menia zobrazené hodnoty. Jediná hodnota v percentách (%) je úroveň nabitia batérii. V prípade hodnoty (nabitia) menej ako 10% zásuvky nepoužívať.
+Aktuálny **stav nabitia a história merania** je dostupná na nasledujúcom [linku](https://sense.camp/dashboard/dab20c20-6146-11ed-968b-252832edc0fa?publicId=a67eb480-6146-11ed-968b-252832edc0fa).
+
 
 
 ## PS
 Najbližšie plány:
-- zabezpečenie (zakrytie) živích častí = šróbov na elektrických spojoch v rámci rozvodnej skrine.
+
 - spojazdnenie vzdialeného odpočtu výroby a spotreby len pre informatívne účely
 - natiahnutie svetla do železnej búdy
 - ďalšie rôzne nepomenované nápady... neváhajte zadávať prostredníctvom [rovnakého formuláru](https://github.com/anton-pytel/kz-pv/issues) ako v prípade problému.

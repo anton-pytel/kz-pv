@@ -26,10 +26,10 @@ def init_mqtt() -> mqtt:
     def on_log(client, userdata, level, buf):
         print("log: ", buf)
 
-    def on_message(client, userdata, message,tmp=None):
+    def on_message(client, userdata, message, tmp=None):
         print(" Received message " + str(message.payload)
-        + " on topic '" + message.topic
-        + "' with QoS " + str(message.qos))
+              + " on topic '" + message.topic
+              + "' with QoS " + str(message.qos))
     mc = mqtt.Client(client_id="kz-client")
     mc.on_connect = on_connect
     mc.on_disconnect = on_disconnect
@@ -60,11 +60,14 @@ def read_solar_data(ecc: EpeverChargeController) -> dict:
         "batt_soc": ecc.get_battery_state_of_charge(),
         "batt_power": ecc.get_battery_power(),
         "pv_power": ecc.get_solar_power(),
+        "pv_voltage": ecc.get_solar_voltage(),
+        "batt_temperature": ecc.get_battery_temperature(),
+        "controller_temperature": ecc.get_battery_temperature(),
     }
 
 
 def init_queue() -> persistqueue:
-    return  persistqueue.SQLiteQueue(QUEUE_NAME, auto_commit=True)
+    return persistqueue.SQLiteQueue(QUEUE_NAME, auto_commit=True)
 
 
 def kill_mqtt(mc: mqtt) -> None:
