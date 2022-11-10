@@ -48,5 +48,7 @@ sudo systemctl start kzpv.service
 2. To change your MQTT broker and port (you will find the data on the topic
   `v1/devices/me/telemetry`) set environment variables `MQTT_HOST` `MQTT_PORT` same as MQTT_TOKEN.
 3. If you do not use SSL and/or password comment out lines 39 and/or 38 respectively in [data_sender.py](data_sender.py). 
+4. If you want more metrics from the device check available methods [here](https://github.com/rosswarren/epevermodbus/blob/main/epevermodbus/driver.py)
+  and add them into read_solar_data function.
 
 In case of any problem feel free to write an issue.
