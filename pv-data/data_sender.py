@@ -25,11 +25,18 @@ def init_mqtt() -> mqtt:
 
     def on_log(client, userdata, level, buf):
         print("log: ", buf)
-    mc = mqtt.Client()
+
+    def on_message(client, userdata, message,tmp=None):
+        print(" Received message " + str(message.payload)
+        + " on topic '" + message.topic
+        + "' with QoS " + str(message.qos))
+    mc = mqtt.Client(client_id="kz-client")
     mc.on_connect = on_connect
     mc.on_disconnect = on_disconnect
     mc.on_log = on_log
+    mc.on_message = on_message
     mc.username_pw_set(MQTT_TOKEN, None)
+    mc.tls_set(ca_certs="/home/pi/kz-pv/pv-data/ca_cert.pem")
     mc.connect_async(MQTT_HOST, MQTT_PORT, 60)
     mc.loop_start()
     return mc
