@@ -63,6 +63,12 @@ def read_solar_data(ecc: EpeverChargeController) -> dict:
         "pv_voltage": ecc.get_solar_voltage(),
         "batt_temperature": ecc.get_battery_temperature(),
         "controller_temperature": ecc.get_battery_temperature(),
+        "pv_energy": ecc.retriable_read_long(0x3312, 4) / 100,
+        "consumed_energy": ecc.retriable_read_long(0x330A, 4) / 100,
+        "external_temperature": ecc.get_remote_battery_temperature(),
+        "battery_status": ecc.get_battery_status(),
+        "controller_status": ecc.get_charging_equipment_status(),
+        "discharge_status": ecc.get_discharging_equipment_status(),
     }
 
 

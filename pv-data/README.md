@@ -50,5 +50,9 @@ sudo systemctl start kzpv.service
 3. If you do not use SSL and/or password comment out lines 39 and/or 38 respectively in [data_sender.py](data_sender.py). 
 4. If you want more metrics from the device check available methods [here](https://github.com/rosswarren/epevermodbus/blob/main/epevermodbus/driver.py)
   and add them into read_solar_data function.
-
+5. It is possible to run the service as a standard python script in order to debug the MQTT connection.
+  Find [here](https://github.com/eclipse/paho.mqtt.python/blob/master/src/paho/mqtt/client.py#L157) the 
+  Error codes of MQTT connection.
+6. In order to read your own special modbus registers from the device see the modbus map 
+   [here](https://www.aggsoft.com/serial-data-logger/tutorials/modbus-data-logging/epever-b-series.htm)
 In case of any problem feel free to write an issue.
