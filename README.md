@@ -29,6 +29,9 @@ Na druhom obrázku je zobrazený rozvádzač a jeho súčasti:
 
 ![image](https://user-images.githubusercontent.com/15068798/197621239-0cab31c8-1ec0-4aba-b4f5-f8f29037412c.png)
 
+![IMG_20221105_153353](https://user-images.githubusercontent.com/15068798/201234565-4e3eb196-f537-4e06-a7bb-1e5361687cea.jpg)
+
+
 Na to, aby bolo možné používať zásuvky, ktoré sú vyvedené von z rozvodnej skrine je potrebné:
 1. Skontrolovať, či je zapnutý striedač v polohe ON, indikované svietiacou zelenou LED diodou (zelené svetielko)
 2. Skontrolovať, či je v polohe hore prúdový chránič.
@@ -36,7 +39,6 @@ Na to, aby bolo možné používať zásuvky, ktoré sú vyvedené von z rozvodn
 
 Ak áno, je možné, zásuvky používať. V prípade problému otvorte [stránku na nahlasovanie problémov](https://github.com/anton-pytel/kz-pv/issues) stlačte tlačitko `New Issue`, napíšte detaily problému do pripraveného okna a popis problému uložte.
 
-**POZOR:** Nedotýkajte sa šróbov, ktoré sa nachádzajú na prúdovom chrániči a ističi, lebo hrozí riziko úrazu elektrickým zariadením.
 
 
 ### Vypnutie
@@ -53,7 +55,6 @@ Aktuálny **stav nabitia a história merania** je dostupná na nasledujúcom [li
 ## PS
 Najbližšie plány:
 
-- spojazdnenie vzdialeného odpočtu výroby a spotreby len pre informatívne účely
 - natiahnutie svetla do železnej búdy
 - ďalšie rôzne nepomenované nápady... neváhajte zadávať prostredníctvom [rovnakého formuláru](https://github.com/anton-pytel/kz-pv/issues) ako v prípade problému.
 
