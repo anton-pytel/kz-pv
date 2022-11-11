@@ -1,0 +1,636 @@
+{
+  "title": "Stav PV",
+  "image": null,
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "46d4722f-0087-6586-a007-452aeb9807c5": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "timeseries_bars_flot",
+        "type": "timeseries",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "a72e49e4-a8fe-d630-3a9b-1cd8db865a53",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "batt_soc",
+                  "type": "timeseries",
+                  "label": "Stav nabitia baterie [%]",
+                  "color": "#2196f3",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue",
+                        "thresholdValue": 10,
+                        "lineWidth": null,
+                        "color": "#ff0000"
+                      }
+                    ]
+                  },
+                  "_hash": 0.09389121544595747,
+                  "units": "%",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            },
+            "aggregation": {
+              "limit": 200,
+              "type": "AVG"
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": true,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 0,
+              "max": 100,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "defaultBarWidth": 600,
+            "barAlignment": "left",
+            "comparisonEnabled": false,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false
+          },
+          "title": "Nabitie batérie",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "actions": {},
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "enableDataExport": true,
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "legendConfig": {
+            "direction": "column",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": true,
+            "showTotal": false,
+            "showLatest": false
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "46d4722f-0087-6586-a007-452aeb9807c5"
+      },
+      "0ba41a50-60fe-5c49-f4da-86d857a37a7c": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "a72e49e4-a8fe-d630-3a9b-1cd8db865a53",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "batt_power",
+                  "type": "timeseries",
+                  "label": "Výkon báterie [W]",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7554476910435153,
+                  "units": "W",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "load_power",
+                  "type": "timeseries",
+                  "label": "Spotreba [W]",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.3676108123303252,
+                  "units": "W",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "pv_power",
+                  "type": "timeseries",
+                  "label": "PV výroba [W]",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.03664703207192277,
+                  "units": "W",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "pv_voltage",
+                  "type": "timeseries",
+                  "label": "PV napätie [V]",
+                  "color": "#ffc107",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "axisTickSize": 0.1,
+                    "axisTickDecimals": 2,
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.4476449666016922,
+                  "units": "V",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Výkon systému",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "enableDataExport": true,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "column",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": true,
+            "showTotal": false,
+            "showLatest": false
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "0ba41a50-60fe-5c49-f4da-86d857a37a7c"
+      },
+      "3de5a685-cfe2-74e4-4336-a853d5a04aa4": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "pie_chart_js",
+        "type": "latest",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "a72e49e4-a8fe-d630-3a9b-1cd8db865a53",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "batt_power",
+                  "type": "timeseries",
+                  "label": "Batéria",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.41327104069500353,
+                  "units": "W",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "load_power",
+                  "type": "timeseries",
+                  "label": "Spotreba",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.7181273718531074,
+                  "units": "W",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "pv_power",
+                  "type": "timeseries",
+                  "label": "PV",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.016669613482073187,
+                  "units": "W",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Rozdelenie toku",
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "enableDataExport": true,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "column",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false,
+            "showLatest": false
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "3de5a685-cfe2-74e4-4336-a853d5a04aa4"
+      },
+      "f591a6a8-9fe5-de6e-b962-d2ddfb19e671": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "timeseries_bars_flot",
+        "type": "timeseries",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "a72e49e4-a8fe-d630-3a9b-1cd8db865a53",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "consumed_energy",
+                  "type": "timeseries",
+                  "label": "Spotrebovaná energia [kWh]",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.6891837339186346,
+                  "units": "kWh",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": true,
+                  "postFuncBody": "if (value && prevOrigValue)\n    return (value-prevOrigValue)/1000;\nelse\n    return 0"
+                },
+                {
+                  "name": "pv_energy",
+                  "type": "timeseries",
+                  "label": "Vyrobená energia [kWh]",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.43873166135096886,
+                  "units": "kWh",
+                  "decimals": 2,
+                  "funcBody": null,
+                  "usePostProcessing": true,
+                  "postFuncBody": "if (value && prevOrigValue)\n    return (value-prevOrigValue)/1000;\nelse\n    return 0"
+                }
+              ],
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            },
+            "aggregation": {
+              "limit": 200,
+              "type": "AVG"
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": true,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 2,
+              "ticksFormatter": ""
+            },
+            "defaultBarWidth": 600,
+            "barAlignment": "left",
+            "comparisonEnabled": false,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false
+          },
+          "title": "Energia",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "actions": {},
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "enableDataExport": true,
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "legendConfig": {
+            "direction": "column",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": true,
+            "showTotal": false,
+            "showLatest": false
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "f591a6a8-9fe5-de6e-b962-d2ddfb19e671"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Stav PV",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "46d4722f-0087-6586-a007-452aeb9807c5": {
+                "sizeX": 6,
+                "sizeY": 5,
+                "row": 0,
+                "col": 0
+              },
+              "0ba41a50-60fe-5c49-f4da-86d857a37a7c": {
+                "sizeX": 18,
+                "sizeY": 5,
+                "row": 0,
+                "col": 6
+              },
+              "3de5a685-cfe2-74e4-4336-a853d5a04aa4": {
+                "sizeX": 6,
+                "sizeY": 6,
+                "row": 5,
+                "col": 0
+              },
+              "f591a6a8-9fe5-de6e-b962-d2ddfb19e671": {
+                "sizeX": 18,
+                "sizeY": 6,
+                "row": 5,
+                "col": 6
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "a72e49e4-a8fe-d630-3a9b-1cd8db865a53": {
+        "id": "a72e49e4-a8fe-d630-3a9b-1cd8db865a53",
+        "alias": "kz-pv",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "bb7ebc50-5e16-11ed-aafe-6f3ed31a4b9c"
+          }
+        }
+      }
+    },
+    "filters": {},
+    "timewindow": {
+      "hideInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "timewindowMs": 86400000,
+        "quickInterval": "CURRENT_DAY",
+        "interval": 300000
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "externalId": null,
+  "name": "Stav PV"
+}
