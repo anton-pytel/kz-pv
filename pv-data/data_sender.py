@@ -54,6 +54,13 @@ def mqtt_publish(mq: mqtt, pq: persistqueue) -> None:
         print(e)
 
 
+def signed_register(data) -> int:
+   if data >= 32768:
+       return data-65536
+   else:
+       return data
+
+
 def read_solar_data(ecc: EpeverChargeController) -> dict:
     return {
         "load_power": ecc.get_load_power(),
@@ -61,8 +68,8 @@ def read_solar_data(ecc: EpeverChargeController) -> dict:
         "batt_power": ecc.get_battery_power(),
         "pv_power": ecc.get_solar_power(),
         "pv_voltage": ecc.get_solar_voltage(),
-        "batt_temperature": ecc.get_battery_temperature(),
-        "controller_temperature": ecc.get_battery_temperature(),
+        "batt_temperature": signed_register(ecc.retriable_read_register(0x3110, 0, 4))/100,
+        "controller_temperature": ecc.get_controller_temperature(),
         "pv_energy": ecc.retriable_read_long(0x3312, 4) / 100,
         "consumed_energy": ecc.retriable_read_long(0x330A, 4) / 100,
         "external_temperature": ecc.get_remote_battery_temperature(),
@@ -73,7 +80,6 @@ def read_solar_data(ecc: EpeverChargeController) -> dict:
         "batt_current": ecc.get_battery_current(),
         "load_current": ecc.get_load_current(),
     }
-
 
 def init_queue() -> persistqueue:
     return persistqueue.SQLiteQueue(QUEUE_NAME, auto_commit=True)
