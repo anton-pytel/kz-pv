@@ -2,7 +2,10 @@
 
 
 V rámci aktivít komunitnej záhrady sa nám podarilo namontovať a spojazdniť [ostrovný systém](https://ecoprodukt.sk/p/80126-solarny-ostrovny-system-1-11kwp-24v-s-40a-mppt-200ah-20179) na výrobu elektrickej energie s pomocou Fotovoltických panelov (PV) 
-a vyrobenú energiu uchovávať v batériách. 
+a vyrobenú energiu uchovávať v batériách. Vďaka za to patrí: 
+- [Nadačnému fondu Baumit](https://nadacnyfond.baumit.sk/grantovy-program), ktorý poskytol dotáciu.
+- Miroslav K., ktorý poskytol praktické skúsenosti a rady s inštaláciou.
+- dobrovoľníci z našej záhrady a z firmy [MAKERS](https://www.makers.sk/), ktorí sa podieľali na inštalácii.
 
 ## Krátke vysvetlenie súčastí
 
@@ -20,7 +23,7 @@ Na druhom obrázku je zobrazený rozvádzač a jeho súčasti:
 - AC: elektrické zásuvky ako ich poznáme na výstupe zo striedača.
 - Zariadenie, do ktorého sa zbiehajú PV, B a DC káble sa nazýva regulátor nabíjania ([nabíjač](https://ecoprodukt.sk/p/18274)). Slúži na optimálny odber výkonu z PV panelov a presunu do batérii a do zariadení pripojených na striedač.  
 
-**POZOR:** Napätie zo striedača na zásuvkách sa pohybuje na úrovni 200V. V bežne dodávanej elektrickej energie je napätie na úrovni 220-240V. Preto používanie zariadení citlivých na úroveň napätia je na vlastné riziko. Za spôsobené škody na zariadeniach nemôžeme brať zodpovednosť. Rovnako výkon, ktorý je možné odoberať je obmedzený na 1500W.
+**POZOR:** Napätie zo striedača na zásuvkách sa pohybuje na úrovni 200V bez záťaže. V bežne dodávanej elektrickej energie je napätie na úrovni 220-240V. Preto používanie zariadení citlivých na úroveň napätia je na vlastné riziko. Za spôsobené škody na zariadeniach nemôžeme brať zodpovednosť. Rovnako výkon, ktorý je možné odoberať je obmedzený na 960W.
 
 
 ## Návod na obsluhu
@@ -42,13 +45,13 @@ Ak áno, je možné, zásuvky používať. V prípade problému otvorte [stránk
 
 
 ### Vypnutie
-Je potrebné aspoň jeden z 3 komponentov v bodoch uvedených vyššie (vypínač striedača, chránič, istič) vypnúť a zatvoriť rozvodnú skriňu.
+Je potrebné aspoň jeden z komponentov (chránič, istič) v bodoch uvedených vyššie, vypnúť a zatvoriť rozvodnú skriňu.
 
 
 ## Záver
 Na  stránke dodavateľa [produktu](https://ecoprodukt.sk/p/80126-solarny-ostrovny-system-1-11kwp-24v-s-40a-mppt-200ah-20179) je uvedená predpokladaná výroba elektrickej energie. Ročná výroba elektrickej energie daného systému pri optimálnych podmienkach by vedela pokryť takmer jeden celý byt. Poďme ju teda spolu pouužívať. 
 Na Displeji striedača sa priebežne menia zobrazené hodnoty. Jediná hodnota v percentách (%) je úroveň nabitia batérii. V prípade hodnoty (nabitia) menej ako 10% zásuvky nepoužívať.
-Aktuálny **stav nabitia a história merania** je dostupná na nasledujúcom [linku](https://sense.camp/dashboard/dab20c20-6146-11ed-968b-252832edc0fa?publicId=a67eb480-6146-11ed-968b-252832edc0fa).
+Aktuálny **stav nabitia a história merania** je dostupná na nasledujúcom [odkaze](https://sense.camp/dashboard/dab20c20-6146-11ed-968b-252832edc0fa?publicId=a67eb480-6146-11ed-968b-252832edc0fa).
 
 
 
