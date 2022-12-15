@@ -30,6 +30,8 @@ Na druhom obrázku je zobrazený rozvádzač a jeho súčasti:
 
 ### Zapnutie
 
+Kľúč od rozvodnej skrine je v plechovej búde na rohu regálu.
+
 ![image](https://user-images.githubusercontent.com/15068798/197621239-0cab31c8-1ec0-4aba-b4f5-f8f29037412c.png)
 
 ![IMG_20221105_153353](https://user-images.githubusercontent.com/15068798/201234565-4e3eb196-f537-4e06-a7bb-1e5361687cea.jpg)
