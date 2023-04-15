@@ -42,15 +42,16 @@ def init_mqtt() -> mqtt:
     return mc
 
 
-def mqtt_publish(mq: mqtt, pq: persistqueue) -> None:
-
+def mqtt_publish(mq: mqtt, pq: persistqueue, sd: dict) -> None:
     mqi = mq.publish("v1/devices/me/telemetry", json.dumps({"keepalive": 1}))
     try:
         mqi.is_published()  # this raises exception if not
+        mq.publish("v1/devices/me/telemetry", json.dumps(sd))
         while pq.qsize() > 0:
             data = pq.get()
             mq.publish("v1/devices/me/telemetry", json.dumps(data))
     except Exception as e:
+        pq.put(sd)
         print(e)
 
 
@@ -109,10 +110,9 @@ def main() -> int:
                 "ts": current_milli_time(),
                 "values": sd
             }
-            pq.put(sd)
             print(sd)
+            mqtt_publish(mc, pq, sd)
             time.sleep(60)
-            mqtt_publish(mc, pq)
     except KeyboardInterrupt:
         if mc:
             kill_mqtt(mc)
