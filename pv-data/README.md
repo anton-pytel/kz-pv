@@ -30,9 +30,11 @@ sudo mv kzpv.service /etc/systemd/system
 7. Adjust connection to the Thingsboard platform (access token) by
 ```
 sudo systemctl edit kzpv.service
-cat cat /etc/systemd/system/kzpv.service.d/override.conf
+cat /etc/systemd/system/kzpv.service.d/override.conf
+
 [Service]
 Environment="MQTT_TOKEN=yourDeviceAccessToken"
+
 ```
 8. Start the service
 ```
