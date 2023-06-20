@@ -18,7 +18,8 @@ Obrázok 1.
 
 
   
-4. Na zapnutie stačí stlačiť vypínač (4), tak aby svietilo svetielko na vypínači.
+4. Na zapnutie stačí stlačiť vypínač (4), tak aby svietilo svetielko na vypínači. Kľúč od boxu je zavesený na klinci v búde v ľavo na začiatku dreveného regálu
+približne na úrovni očí. 
 
 ![IMG_20230607_200743](https://github.com/anton-pytel/kz-pv/assets/15068798/5f54f5d1-b391-4217-80a8-46473cd82215)
 Obrázok 4.
