@@ -26,4 +26,6 @@ Postup na polievanie pomocou čerpadla pozostáva z niekoľkých jednoduchých k
 
 
 Následne je možné napĺňať nádoby s vodou alebo polievať priamo zo studne. V búde sa nachádzajú všetky hadice - prúžkovaná (1) aj sieťovaná (2). 
-Navyše sa tam nachádzajú tenšie, ktoré je možné pripojiť k hrubšej hadici z čerpadla a tak poliať aj opačný koniec záhrady.
+Navyše sa tam nachádzajú tenšie, ktoré je možné pripojiť k hrubšej hadici z čerpadla a tak poliať aj opačný koniec záhrady. 
+
+Čerpadlo je možné napájať z elektriny z PV panelu podľa [inštrukcii k zapojeniu](./light-socket.md).
