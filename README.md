@@ -2,6 +2,7 @@
 
 Linky:
 - [Polievanie pomocou čerpadla](./watering.md)
+- [Napájanie svetiel a zásuviek](./light-socket.md)
 
 
 V rámci aktivít komunitnej záhrady sa nám podarilo namontovať a spojazdniť [ostrovný systém](https://ecoprodukt.sk/p/80126-solarny-ostrovny-system-1-11kwp-24v-s-40a-mppt-200ah-20179) na výrobu elektrickej energie s pomocou Fotovoltických panelov (PV) 
