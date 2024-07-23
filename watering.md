@@ -14,7 +14,7 @@ Obrázok 1.
 ![IMG_20230620_180526](https://github.com/anton-pytel/kz-pv/assets/15068798/70f667ba-66e4-4a91-80a4-591ca75f5206)
 Obrázok 2.
 
-4. Nalejeme do prúžkovanej hadice (1) vodu.
+4. Nalejeme do prúžkovanej hadice (1) vodu. Mriežkovanú hadicu (2) treba držať vyššie ako prúžkovanú hadicu (1), tak aby bolo vidieť, že v mriežkovanej hadici (2) je dostatočné množstvo vody, aby tak v čerpadle ostalo minimum vzduchu, ktorý treba na začiatku z neho vytlačiť a mohlo čerpať vodu zo studne ([princíp sacieho čerpadla](https://www.bola.sk/poradna/samonasavacie-cerpadla)).
 
 5. Pripojíme voľný koniec hadice k studni na filter (4).
 
