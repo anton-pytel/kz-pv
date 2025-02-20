@@ -36,7 +36,9 @@ def init_mqtt() -> mqtt:
     mc.on_log = on_log
     mc.on_message = on_message
     mc.username_pw_set(MQTT_TOKEN, None)
-    mc.tls_set(ca_certs="/home/pi/kz-pv/pv-data/ca_cert.pem")
+    # mc.tls_set(ca_certs="/home/pi/kz-pv/pv-data/ca_cert.pem")
+    # using let's encrypt certificate
+    mc.tls_set()
     mc.connect_async(MQTT_HOST, MQTT_PORT, 60)
     mc.loop_start()
     return mc
